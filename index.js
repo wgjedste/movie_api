@@ -21,15 +21,39 @@ let users = [
   },
   {
     id: 2,
-    Username: "Natasha Keating",
+    Username: "Thom Yorke",
     Password: "5678",
     Email: "h.monet1104@yahoo.com",
-    Birthday: "11/04/1990",
+    Birthday: "10/07/1968",
     FavoriteMovies: [],
   },
   {
     id: 3,
-    Username: "Sean Keating",
+    Username: "Jonny Greenwood",
+    Password: "5555",
+    Email: "seank@gmail.com",
+    Birthday: "11/05/1971",
+    FavoriteMovies: [],
+  },
+  {
+    id: 4,
+    Username: "Colin Greenwood",
+    Password: "5555",
+    Email: "seank@gmail.com",
+    Birthday: "06/26/1968",
+    FavoriteMovies: [],
+  },
+  {
+    id: 5,
+    Username: "Ed O'brien",
+    Password: "5555",
+    Email: "seank@gmail.com",
+    Birthday: "04/14/1968",
+    FavoriteMovies: [],
+  },
+  {
+    id: 6,
+    Username: "Phil Selway",
     Password: "5555",
     Email: "seank@gmail.com",
     Birthday: "11/04/1990",
@@ -83,24 +107,24 @@ let movies = [
   },
   {
     id: 3,
-    Title: "The Notebook",
+    Title: "Vertigo",
     Description:
-      "A poor yet passionate young man falls in love with a rich young woman, giving her a sense of freedom, but they are soon separated because of their social differences.",
+      "A former police detective juggles wrestling with his personal demons and becoming obsessed with a hauntingly beautiful woman.",
     Genre: {
-      Name: "Romance",
+      Name: "Mystery",
       Description:
-        "Romance films or romance movies are romantic love stories recorded in visual media for broadcast in theaters and on TV that focus on passion, emotion, and the affectionate romantic involvement of the main characters and the journey that their love takes them through dating, courtship or marriage.",
+        "The mystery genre is a genre of fiction that follows a crime (like a murder or a disappearance) from the moment it is committed to the moment it is solved. Mystery novels are often called “whodunnits” because they turn the reader into a detective trying to figure out the who, what, when, and how of a particular crime.",
     },
     Director: {
-      Name: "Nick Cassavetes",
+      Name: "Alfred Hitchcock",
       Bio:
-        "Nick Cassavetes was born in New York City, the son of actress Gena Rowlands and Greek-American actor and film director John Cassavetes. As a child, he appeared in two of his father's films: Husbands (1970) and A Woman Under the Influence (1974). After spending so much of his youth surrounded by the film industry, Cassavetes initially decided he did not want to go into the field. He instead attended Syracuse University on a basketball scholarship. His athletic career was effectively ended by an injury, and he decided to rethink his aspirations, ultimately deciding to attend his parents' alma mater, the American Academy of Dramatic Arts in New York. He has appeared in the films, Face/Off (1997), The Wraith (1986), Life (1999), Class of 1999 II: The Substitute (1994), Backstreet Dreams (1990) and The Astronaut's Wife (1999), among others. He has directed several films, including John Q (2002), Alpha Dog (2006), She's So Lovely (1997), Unhook the Stars (1996), The Notebook (2004), and My Sister's Keeper (2009). He also adapted the screenplay for Blow (2001) and wrote the dialogue for the Justin Timberlake music video, \"What Goes Around... Comes Around\". In 1985, Cassavetes married Isabelle Rafalovich. They had two daughters together, Virginia Cassavetes (Virginia Sara Cassavetes) (born in 1986) and Sasha Cassavetes (born in 1988), before divorcing. He then married Heather Wahlquist (Heather \"Queenie\" Wahlquist), who has appeared in several of his films, including a small role in The Notebook (2004) as Sara, a secondary character and best friend to the female lead Allie Hamilton, portrayed by Rachel McAdams. The movie is effectively a family project, as Cassavetes's own mother, Gena Rowlands, appears as the older, married Allie Calhoun.",
-      Birth: "1959",
-      Death: "",
+        "Sir Alfred Joseph Hitchcock KBE (13 August 1899 – 29 April 1980) was an English film director, producer, and screenwriter. He is one of the most influential and widely studied filmmakers in the history of cinema.[1] Known as the 'Master of Suspense', he directed over 50 feature films[a] in a career spanning six decades, becoming as well known as any of his actors thanks to his many interviews, his cameo roles in most of his films, and his hosting and producing of the television anthology Alfred Hitchcock Presents (1955–65). His films garnered 46 Academy Award nominations including six wins, although he never won for Best Director despite having had five nominations.",
+      Birth: "1899",
+      Death: "1980",
     },
 
     ImagePath:
-      "https://m.media-amazon.com/images/M/MV5BMTk3OTM5Njg5M15BMl5BanBnXkFtZTYwMzA0ODI3._V1_.jpg",
+      "https://m.media-amazon.com/images/M/MV5BYTE4ODEwZDUtNDFjOC00NjAxLWEzYTQtYTI1NGVmZmFlNjdiL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX182_CR0,0,182,268_AL_.jpg",
     Featured: true,
   },
   {
@@ -145,6 +169,50 @@ let movies = [
 
     ImagePath:
       "https://m.media-amazon.com/images/M/MV5BZTAzNWZlNmUtZDEzYi00ZjA5LWIwYjEtZGM1NWE1MjE4YWRhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    Featured: true,
+  },
+  {
+    id: 6,
+    Title: "Alien",
+    Description:
+      "After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.",
+    Genre: {
+      Name: "Sci- Fi",
+      Description:
+        "Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, alien worlds, extrasensory perception and time travel, along with futuristic elements such as spacecraft, robots, cyborgs, interstellar travel or other technologies. Science fiction films have often been used to focus on political or social issues, and to explore philosophical issues like the human condition.",
+    },
+    Director: {
+      Name: "Ridley Scott",
+      Bio:
+        "Described by film producer Michael Deeley as the 'very best eye in the business', director Ridley Scott was born on November 30, 1937 in South Shields, Tyne and Wear (then County Durham).",
+      Birth: "1963",
+      Death: "",
+    },
+
+    ImagePath:
+      "https://images-na.ssl-images-amazon.com/images/I/91SfgExSaAL._AC_SL1500_.jpg",
+    Featured: true,
+  },
+  {
+    id: 6,
+    Title: "Kill Bill",
+    Description:
+      "After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+    Genre: {
+      Name: "Action",
+      Description:
+        "Action film is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases.",
+    },
+    Director: {
+      Name: "Quentin Tarantino",
+      Bio:
+        "Quentin Jerome Tarantino was born in Knoxville, Tennessee. His father, Tony Tarantino, is an Italian-American actor and musician from New York, and his mother, Connie (McHugh), is a nurse from Tennessee. Quentin moved with his mother to Torrance, California, when he was four years old.",
+      Birth: "1963",
+      Death: "",
+    },
+
+    ImagePath:
+      "",
     Featured: true,
   },
 ];
