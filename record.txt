@@ -1,0 +1,334 @@
+var movie1 = {
+  Title: "Silence of the Lambs",
+  Description: "A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.",
+  Genre: {
+    Name: "Thriller",
+    Description: "Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience."
+  },
+  Director: {
+    Name: "Jonathan Demme",
+    Bio: "Robert Jonathan Demme was an American director, producer, and screenwriter.",
+    Birth: "1944",
+    Death: "2017"
+  },
+  ImagePath: "silenceofthelambs.png",
+  Featured: true
+}
+
+db.movies.insertOne(movie1)
+ 
+var movie2 = {
+  Title: "Vertigo",
+  Description: "A former police detective juggles wrestling with his personal demons and becoming obsessed with a hauntingly beautiful woman",
+  Genre: {
+    Name: "Mystery",
+    Description: "The mystery genre is a genre of fiction that follows a crime (like a murder or a disappearance) from the moment it is committed to the moment it is solved. Mystery novels are often called “whodunnits” because they turn the reader into a detective trying to figure out the who, what, when, and how of a particular crime."
+  },
+  Director: {
+    Name: "Alfred Hitchcock",
+    Bio: "Alfred Hitchcock was an American director, producer, and screenwriter.",
+    Birth: "1899",
+    Death: "1980"
+  },
+  ImagePath: "vertigo.png",
+  Featured: true
+}
+
+db.movies.insertOne(movie2)
+
+
+
+var movie3 = {
+  Title: "Finding Nemo",
+  Description: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
+  Genre: {
+    Name: "Adventure",
+    Description: "Adventure. Adventure film is a genre that revolves around the conquests and explorations of a protagonist. The purpose of the conquest can be to retrieve a person or treasure, but often the main focus is simply the pursuit of the unknown. These films generally take place in exotic locations and play on historical myths."
+  },
+  Director: {
+    Name: "Andrew Stanton",
+    Bio: "Andrew Stanton has been a major creative force at Pixar Animation Studios since 1990, when he became the second animator and ninth employee to join the company's elite group of computer animation pioneers.",
+    Birth: "1965",
+    Death: ""
+  },
+  ImagePath: "finding_nemo.png",
+  Featured: true
+}
+
+db.movies.insertOne(movie3)
+
+
+
+
+var movie4 = {
+  Title: "Raising Arizona",
+  Description: "When a childless couple of an ex-con and an ex-cop decide to help themselves to one of another family's quintuplets, their lives become more complicated than they anticipated.",
+  Genre: {
+    Name: "Crime",
+    Description: "Crime fiction is the genre of fiction that deals with crimes, their detection, criminals, and their motives. Most - though not all - crime novels crime novels share a common structure."
+  },
+  Director: {
+    Name: "Joel Coen", "Ethan Coen",
+    Bio: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody.",
+    Birth: "1954", "1957",
+    Death: ""
+  },
+  ImagePath: "raising_arizona.png",
+  Featured: true
+}
+
+db.movies.insertOne(movie4)
+
+db.movies.update(
+  { _id: ObjectId("6053c4d8712576cc166d7b75") },
+  { $set: { Title: "Raising Arizona",
+  Description: "When a childless couple of an ex-con and an ex-cop decide to help themselves to one of another family's quintuplets, their lives become more complicated than they anticipated.",
+  Genre: {
+  Name: "Crime",
+  Description: "Crime fiction is the genre of fiction that deals with crimes, their detection, criminals, and their motives. Most - though not all - crime novels crime novels share a common structure."
+  },
+  Director: {
+  Name: "Coen Brothers",
+  Bio: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody.",
+  Birth: "1954", "1957",
+  Death: "" } }
+)
+
+
+
+var movie5 = {
+  Title: "Alien",
+  Description: "After a space merchant vessel receives an unknown transmission as a distress call, one of the crew is attacked by a mysterious life form and they soon realize that its life cycle has merely begun.",
+  Genre: {
+    Name: "Sci- Fi",
+    Description: "Science fiction (or sci-fi) is a film genre that uses speculative, fictional science-based depictions of phenomena that are not fully accepted by mainstream science, such as extraterrestrial lifeforms, alien worlds, extrasensory perception and time travel, along with futuristic elements such as spacecraft, robots, cyborgs, interstellar travel or other technologies. Science fiction films have often been used to focus on political or social issues, and to explore philosophical issues like the human condition."
+  },
+  Director: {
+    Name: "Ridley Scott",
+    Bio: "Described by film producer Michael Deeley as the 'very best eye in the business', director Ridley Scott was born on November 30, 1937 in South Shields, Tyne and Wear (then County Durham).",
+    Birth: "1937",
+    Death: ""
+  },
+  ImagePath: "alien.png",
+  Featured: true
+}
+
+db.movies.insertOne(movie5)
+
+
+
+
+var movie6 = {
+  Title: "Kill Bill",
+  Description: "After awakening from a four-year coma, a former assassin wreaks vengeance on the team of assassins who betrayed her.",
+  Genre: {
+    Name: "Action",
+    Description: "Action film is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases."
+  },
+  Director: {
+    Name: "Quentin Tarantino",
+    Bio: "Quentin Jerome Tarantino was born in Knoxville, Tennessee. His father, Tony Tarantino, is an Italian-American actor and musician from New York, and his mother, Connie (McHugh), is a nurse from Tennessee. Quentin moved with his mother to Torrance, California, when he was four years old.",
+    Birth: "1963",
+    Death: ""
+  },
+  ImagePath: "kill_bill.png",
+  Featured: true
+}
+
+db.movies.insertOne(movie6)
+
+
+
+
+var movie7 = {
+  Title: "The Witch",
+  Description: "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession.",
+  Genre: {
+    Name: "Horror",
+    Description: "Horror is a genre of speculative fiction which is intended to frighten, scare, or disgust."
+  },
+  Director: {
+    Name: "Robert Eggers",
+    Bio: "Robert Eggers was born on July 7, 1983 in Lee, New Hampshire, USA. He is a production designer and director, known for The Lighthouse (2019), The Witch (2015) and The Tell-Tale Heart (2008).",
+    Birth: "1983",
+    Death: ""
+  },
+  ImagePath: "https://www.imdb.com/title/tt4263482/mediaviewer/rm2328686080/",
+  Featured: true
+}
+
+db.movies.insertOne(movie7)
+
+
+
+
+var movie8 = {
+  Title: "There Will Be Blood",
+  Description: "A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business.",
+  Genre: {
+    Name: "Drama",
+    Description: "The drama genre features stories with high stakes and a lot of conflicts. They're plot-driven and demand that every character and scene move the story forward. Dramas follow a clearly defined narrative plot structure, portraying real-life scenarios or extreme situations with emotionally-driven characters."
+  },
+  Director: {
+    Name: "Paul Thomas Anderson",
+    Bio: "Anderson was born in 1970. He was one of the first of the "video store" generation of film-makers. His father was the first man on his block to own a V.C.R., and from a very early age Anderson had an infinite number of titles available to him.",
+    Birth: "1970",
+    Death: ""
+  },
+  ImagePath: "https://www.imdb.com/title/tt0469494/mediaviewer/rm883920896/",
+  Featured: true
+}
+
+db.movies.insertOne(movie8)
+
+
+
+var movie9 = {
+  Title: "Amadeus",
+  Description: "The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was insanely jealous of Mozart's talent and claimed to have murdered him.",
+  Genre: {
+    Name: "Biography",
+    Description: "Biography is a literary genre that portrays the experiences of all these events occurring in the life of a person, mostly in a chronological order."
+  },
+  Director: {
+    Name: "Milos Forman",
+    Bio: "Anderson was born in 1970. He was one of the first of the "video store" generation of film-makers. His father was the first man on his block to own a V.C.R., and from a very early age Anderson had an infinite number of titles available to him.",
+    Birth: "1932",
+    Death: "2018"
+  },
+  ImagePath: "https://www.imdb.com/title/tt0086879/mediaviewer/rm3039435264/",
+  Featured: true
+}
+
+db.movies.insertOne(movie9)
+
+
+
+
+var movie10 = {
+  Title: "Birdman",
+  Description: "A washed-up superhero actor attempts to revive his fading career by writing, directing, and starring in a Broadway production.",
+  Genre: {
+    Name: "Comedy",
+    Description: "A comedy film is a category of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect."
+  },
+  Director: {
+    Name: "Alejandro G. Iñárritu",
+    Bio: "Alejandro González Iñárritu (ih-nyar-ee-too), born August 15th, 1963, is a Mexican film director. González Iñárritu is the first Mexican director to be nominated for the Academy Award for Best Director and by the Directors Guild of America for Best Director.",
+    Birth: "1963",
+    Death: ""
+  },
+  ImagePath: "https://www.imdb.com/title/tt0086879/mediaviewer/rm3039435264/",
+  Featured: true
+}
+
+db.movies.insertOne(movie9)
+
+db.movies.update(
+  { _id: ObjectId("60524bed8c7458744909bd4c") },
+  { $set: { Description: "Update: A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer." } }
+)
+
+
+
+var user1 = {
+    Username: "Will Gjedsted",
+    Password: "1234",
+    Email: "wgjedste@gmail.com",
+    Birthday: new Date("1991-02-19"),
+    FavoriteMovies: []
+}
+
+db.users.insertOne(user1)
+
+
+
+var user2 = {
+    Username: "Thom Yorke",
+    Password: "5678",
+    Email: "tyorke@gmail.com",
+    Birthday: new Date("1968-10-07"),
+    FavoriteMovies: []
+}
+
+db.users.insertOne(user2)
+
+db.users.update(
+  { Username: "Thom Yorke" },
+  { $push: { FavoriteMovies: ObjectId("60524bed8c7458744909bd4c") } }
+)
+
+
+
+var user3 = {
+    Username: "Jonny Greenwood",
+    Password: "9101",
+    Email: "jgreenwood@gmail.com",
+    Birthday: new Date("1971-11-05"),
+    FavoriteMovies: []
+}
+
+db.users.insertOne(user3)
+
+
+
+
+var user4 = {
+    Username: "Colin Greenwood",
+    Password: "2345",
+    Email: "cgreenwood@gmail.com",
+    Birthday: new Date("1969-06-26"),
+    FavoriteMovies: []
+}
+
+db.users.insertOne(user4)
+
+
+  db.users.update(
+    { _id: ObjectId("6054339a712576cc166d7b7c") },
+    { $set: { Birthday: "1969-06-26" } }
+  )
+
+
+
+
+
+var user5 = {
+    Username: "Phillip Selway",
+    Password: "6789",
+    Email: "pselway@yahoo.com",
+    Birthday: new Date("1967-05-23"),
+    FavoriteMovies: []
+}
+
+db.users.insertOne(user5)
+
+db.users.update(
+  { Username: "Jonny Greenwood" },
+  { $push: { FavoriteMovies: ObjectId("60524bed8c7458744909bd4c") } }
+)
+
+db.users.update(
+  { Username: "Will Gjedsted" },
+  { $push: { FavoriteMovies: ObjectId("60524bed8c7458744909bd4c") } }
+)
+
+db.movies.remove({ "Genre.Name": "Comedy" })
+
+
+
+
+db.movies.update(
+  { _id: ObjectId("6053c4d8712576cc166d7b75") },
+  { $set: {"Director.Name": "Coen Brothers"} }
+)
+
+
+db.users.update(
+  { Username: "Will Gjedsted" },
+  { $push: { FavoriteMovies: ObjectId("6053c4d8712576cc166d7b75") } }
+)
+
+db.users.remove({Username: "Thom Yorke"})
+
+mongoexport -d myFlixDB -c users -o users.json

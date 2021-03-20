@@ -185,7 +185,7 @@ let movies = [
       Name: "Ridley Scott",
       Bio:
         "Described by film producer Michael Deeley as the 'very best eye in the business', director Ridley Scott was born on November 30, 1937 in South Shields, Tyne and Wear (then County Durham).",
-      Birth: "1963",
+      Birth: "1937",
       Death: "",
     },
 

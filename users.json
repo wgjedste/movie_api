@@ -1,0 +1,1 @@
+{"_id":{"$oid":"60524f1e8c7458744909bd4d"},"Username":"Will Gjedsted","Password":"1234","Email":"wgjedste@gmail.com","Birthday":{"$date":"1991-02-19T00:00:00Z"},"FavoriteMovies":[{"$oid":"60524bed8c7458744909bd4c"}]}
