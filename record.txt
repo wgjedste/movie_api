@@ -17,6 +17,9 @@ var movie1 = {
 
 db.movies.insertOne(movie1)
  
+
+
+
 var movie2 = {
   Title: "Vertigo",
   Description: "A former police detective juggles wrestling with his personal demons and becoming obsessed with a hauntingly beautiful woman",
@@ -38,6 +41,9 @@ db.movies.insertOne(movie2)
 
 
 
+
+
+
 var movie3 = {
   Title: "Finding Nemo",
   Description: "After his son is captured in the Great Barrier Reef and taken to Sydney, a timid clownfish sets out on a journey to bring him home.",
@@ -51,7 +57,7 @@ var movie3 = {
     Birth: "1965",
     Death: ""
   },
-  ImagePath: "finding_nemo.png",
+  ImagePath: "https://www.imdb.com/title/tt0266543/mediaviewer/rm3313243136/",
   Featured: true
 }
 
@@ -60,39 +66,27 @@ db.movies.insertOne(movie3)
 
 
 
+
+
 var movie4 = {
-  Title: "Raising Arizona",
-  Description: "When a childless couple of an ex-con and an ex-cop decide to help themselves to one of another family's quintuplets, their lives become more complicated than they anticipated.",
+  Title: "The Witch",
+  Description: "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession.",
   Genre: {
-    Name: "Crime",
-    Description: "Crime fiction is the genre of fiction that deals with crimes, their detection, criminals, and their motives. Most - though not all - crime novels crime novels share a common structure."
+    Name: "Horror",
+    Description: "Horror is a genre of speculative fiction which is intended to frighten, scare, or disgust."
   },
   Director: {
-    Name: "Joel Coen", "Ethan Coen",
-    Bio: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody.",
-    Birth: "1954", "1957",
+    Name: "Robert Eggers",
+    Bio: "Robert Eggers was born on July 7, 1983 in Lee, New Hampshire, USA. He is a production designer and director, known for The Lighthouse (2019), The Witch (2015) and The Tell-Tale Heart (2008).",
+    Birth: "1983",
     Death: ""
   },
-  ImagePath: "raising_arizona.png",
+  ImagePath: "https://www.imdb.com/title/tt4263482/mediaviewer/rm2328686080/",
   Featured: true
 }
 
 db.movies.insertOne(movie4)
 
-db.movies.update(
-  { _id: ObjectId("6053c4d8712576cc166d7b75") },
-  { $set: { Title: "Raising Arizona",
-  Description: "When a childless couple of an ex-con and an ex-cop decide to help themselves to one of another family's quintuplets, their lives become more complicated than they anticipated.",
-  Genre: {
-  Name: "Crime",
-  Description: "Crime fiction is the genre of fiction that deals with crimes, their detection, criminals, and their motives. Most - though not all - crime novels crime novels share a common structure."
-  },
-  Director: {
-  Name: "Coen Brothers",
-  Bio: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody.",
-  Birth: "1954", "1957",
-  Death: "" } }
-)
 
 
 
@@ -109,7 +103,7 @@ var movie5 = {
     Birth: "1937",
     Death: ""
   },
-  ImagePath: "alien.png",
+  ImagePath: "https://www.imdb.com/title/tt0078748/mediaviewer/rm2990766080/",
   Featured: true
 }
 
@@ -131,33 +125,59 @@ var movie6 = {
     Birth: "1963",
     Death: ""
   },
-  ImagePath: "kill_bill.png",
+  ImagePath: "https://www.imdb.com/title/tt0266697/mediaviewer/rm2033140224/",
   Featured: true
 }
 
 db.movies.insertOne(movie6)
 
+db.movies.update(
+  { _id: ObjectId("60524bb18c7458744909bd4b") },
+  { $set: { ImagePath: "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544/"}})
+
 
 
 
 var movie7 = {
-  Title: "The Witch",
-  Description: "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession.",
+  Title: "Raising Arizona",
+  Description: "When a childless couple of an ex-con and an ex-cop decide to help themselves to one of another family's quintuplets, their lives become more complicated than they anticipated.",
   Genre: {
-    Name: "Horror",
-    Description: "Horror is a genre of speculative fiction which is intended to frighten, scare, or disgust."
+    Name: "Crime",
+    Description: "Crime fiction is the genre of fiction that deals with crimes, their detection, criminals, and their motives. Most - though not all - crime novels crime novels share a common structure."
   },
   Director: {
-    Name: "Robert Eggers",
-    Bio: "Robert Eggers was born on July 7, 1983 in Lee, New Hampshire, USA. He is a production designer and director, known for The Lighthouse (2019), The Witch (2015) and The Tell-Tale Heart (2008).",
-    Birth: "1983",
+    Name: "Coen Brothers",
+    Bio: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody.",
+    Birth: "1954",
     Death: ""
   },
-  ImagePath: "https://www.imdb.com/title/tt4263482/mediaviewer/rm2328686080/",
+  ImagePath: "https://www.imdb.com/title/tt0093822/mediaviewer/rm4098099712/",
   Featured: true
 }
 
 db.movies.insertOne(movie7)
+
+
+
+db.movies.update(
+  { _id: ObjectId("605a6b47be2a87a95dbece28") },
+  { $set: { Title: "Raising Arizona",
+  Description: "When a childless couple of an ex-con and an ex-cop decide to help themselves to one of another family's quintuplets, their lives become more complicated than they anticipated.",
+  Genre: {
+  Name: "Crime",
+  Description: "Crime fiction is the genre of fiction that deals with crimes, their detection, criminals, and their motives. Most - though not all - crime novels crime novels share a common structure."
+  },
+  Director: {
+  Name: "Coen Brothers",
+  Bio: "Joel Coen and Ethan Coen, collectively referred to as the Coen Brothers, are American film directors, producers, screenwriters, and editors. Their films span many genres and styles, which they frequently subvert or parody.",
+  Birth: "1954", "1957",
+  Death: "" } }
+)
+
+db.movies.remove({ "Genre.Name": "Crime" })
+
+
+
 
 
 
@@ -183,7 +203,7 @@ db.movies.insertOne(movie8)
 
 
 
-var movie9 = {
+var movie10 = {
   Title: "Amadeus",
   Description: "The life, success and troubles of Wolfgang Amadeus Mozart, as told by Antonio Salieri, the contemporaneous composer who was insanely jealous of Mozart's talent and claimed to have murdered him.",
   Genre: {
@@ -200,7 +220,9 @@ var movie9 = {
   Featured: true
 }
 
-db.movies.insertOne(movie9)
+db.movies.insertOne(movie10)
+
+
 
 
 
@@ -222,7 +244,7 @@ var movie10 = {
   Featured: true
 }
 
-db.movies.insertOne(movie9)
+db.movies.insertOne(movie10)
 
 db.movies.update(
   { _id: ObjectId("60524bed8c7458744909bd4c") },
@@ -331,4 +353,4 @@ db.users.update(
 
 db.users.remove({Username: "Thom Yorke"})
 
-mongoexport -d myFlixDB -c users -o users.json
+mongoexport -d myFlixDB -c movies -o movies.json
