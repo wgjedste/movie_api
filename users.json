@@ -1,1 +1,6 @@
-{"_id":{"$oid":"60524f1e8c7458744909bd4d"},"Username":"Will Gjedsted","Password":"1234","Email":"wgjedste@gmail.com","Birthday":{"$date":"1991-02-19T00:00:00Z"},"FavoriteMovies":[{"$oid":"60524bed8c7458744909bd4c"}]}
+{"_id":{"$oid":"60543074712576cc166d7b7a"},"Username":"Will Gjedsted","Password":"1234","Email":"wgjedste@gmail.com","Birthday":{"$date":"1991-02-19T00:00:00Z"},"FavoriteMovies":[{"$oid":"6053c4d8712576cc166d7b75"}]}
+{"_id":{"$oid":"605432eb712576cc166d7b7b"},"Username":"Jonny Greenwood","Password":"9101","Email":"jgreenwood@gmail.com","Birthday":{"$date":"1971-11-05T00:00:00Z"},"FavoriteMovies":[]}
+{"_id":{"$oid":"6054339a712576cc166d7b7c"},"Username":"Colin Greenwood","Password":"2345","Email":"cgreenwood@gmail.com","Birthday":"1969-06-26","FavoriteMovies":[]}
+{"_id":{"$oid":"605433ee712576cc166d7b7d"},"Username":"Phillip Selway","Password":"6789","Email":"pselway@yahoo.com","Birthday":{"$date":{"$numberLong":"-82425600000"}},"FavoriteMovies":[]}
+{"_id":{"$oid":"605a7ab820f2fe2f2a4d27fc"},"Username":"Thom Yorke","Password":"5678","Email":"tyorke@gmail.com","Birthday":{"$date":{"$numberLong":"-38966400000"}},"FavoriteMovies":[]}
+{"_id":{"$oid":"605f7ec06138a03b66d987ec"},"FavoriteMovies":[],"Username":"Sammy","Password":"1234","Email":"1991-02-19T00:00:00.000Z","Birthday":{"$date":"1991-02-19T00:00:00Z"},"__v":0}

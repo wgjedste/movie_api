@@ -11,7 +11,7 @@ var movie1 = {
     Birth: "1944",
     Death: "2017"
   },
-  ImagePath: "silenceofthelambs.png",
+  ImagePath: "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544",
   Featured: true
 }
 
@@ -33,7 +33,7 @@ var movie2 = {
     Birth: "1899",
     Death: "1980"
   },
-  ImagePath: "vertigo.png",
+  ImagePath: "https://www.imdb.com/title/tt0052357/mediaviewer/rm4007330816/",
   Featured: true
 }
 
@@ -132,8 +132,8 @@ var movie6 = {
 db.movies.insertOne(movie6)
 
 db.movies.update(
-  { _id: ObjectId("60524bb18c7458744909bd4b") },
-  { $set: { ImagePath: "https://www.imdb.com/title/tt0102926/mediaviewer/rm3242988544/"}})
+  { _id: ObjectId("6053bb2d712576cc166d7b73") },
+  { $set: { ImagePath: "https://www.imdb.com/title/tt0052357/mediaviewer/rm4007330816/"}})
 
 
 
@@ -353,4 +353,4 @@ db.users.update(
 
 db.users.remove({Username: "Thom Yorke"})
 
-mongoexport -d myFlixDB -c movies -o movies.json
+mongoexport -d test -c users -o users.json
