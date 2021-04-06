@@ -354,3 +354,10 @@ db.users.update(
 db.users.remove({Username: "Thom Yorke"})
 
 mongoexport -d test -c users -o users.json
+
+
+mongo "mongodb+srv://cluster0.u7cg3.mongodb.net/myFirstDatabase" --username willgjedsted
+
+mongoimport --uri mongodb+srv://willgjedsted:willgjedsted@cluster0.u7cg3.mongodb.net/test --collection users --type json --file users.json
+
+mongodb+srv://willgjedsted:willgjedsted@cluster0.u7cg3.mongodb.net/test?retryWrites=true&w=majority
