@@ -33,10 +33,12 @@ app.use(cors({
 //   useUnifiedTopology: true,
 // });
 
-mongoose.connect("mongodb+srv://willgjedsted:willgjedsted@cluster0.u7cg3.mongodb.net/test?retryWrites=true&w=majority", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect("mongodb+srv://willgjedsted:willgjedsted@cluster0.u7cg3.mongodb.net/test?retryWrites=true&w=majority", {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
+
+mongoose.connect( process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 //express.static
 //"documentation.html" file from public folder
