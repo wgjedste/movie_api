@@ -1,14 +1,22 @@
-const express = require("express"),
-  morgan = require("morgan");
+const path = require('path');
+const express = require('express'),
+  morgan = require('morgan'),
+  bodyParser = require('body-parser');
+
 const app = express();
-const bodyParser = require("body-parser");
-let auth = require('./auth')(app);
-const mongoose = require("mongoose");
-const Models = require("./models.js");
-const passport = require('passport');
-require('./passport');
 const cors = require('cors');
 app.use(cors());
+
+const mongoose = require('mongoose');
+const Models = require('./models.js');
+
+app.use(bodyParser.json());
+
+let auth = require('./auth')(app);
+
+const passport = require('passport');
+require('./passport');
+
 const { check, validationResult } = require('express-validator');
 
 const Movies = Models.Movie;
