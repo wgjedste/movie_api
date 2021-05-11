@@ -214,7 +214,7 @@ app.put(
         $set: {
           Username: req.body.Username,
           Password: hashedPassword,
-          Email: req.body.Birthday,
+          Email: req.body.Email,
         },
       },
       { new: true }, //This Line makes sure that the updated document is returned
